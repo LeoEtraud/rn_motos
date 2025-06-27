@@ -550,7 +550,7 @@ export default function Home() {
               Por que escolher a RN Motos?
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Anos de experiência e compromisso com a excelência nos colocam
+              Com anos de experiência e compromisso com a excelência nos colocam
               como referência no mercado
             </p>
           </div>
