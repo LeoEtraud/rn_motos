@@ -80,7 +80,7 @@ export default function Home() {
                 className="bg-red-600 text-white hover:bg-red-700 font-medium"
                 onClick={() => {
                   const message =
-                    "Olá! Gostaria de solicitar um atendimento da RN Motos, Peças e Serviços. Podem me ajudar?";
+                    "Olá! Gostaria de solicitar um atendimento da RN Motos, peças e serviços. Podem me ajudar?";
                   const phoneNumber = "5598981230034";
                   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
                     message
@@ -133,7 +133,7 @@ export default function Home() {
                   className="bg-red-600 text-white hover:bg-red-700 font-medium w-fit"
                   onClick={() => {
                     const message =
-                      "Olá! Gostaria de solicitar um atendimento da MotoService Pro. Podem me ajudar?";
+                      "Olá! Gostaria de solicitar um atendimento da RN Motos, peças e serviços. Podem me ajudar?";
                     const phoneNumber = "5511999999999";
                     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
                       message
