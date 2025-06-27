@@ -4,7 +4,7 @@ export default function WhatsAppFloat() {
   const handleWhatsAppClick = () => {
     const message =
       "Olá! Gostaria de solicitar um atendimento da RN Motos, peças e serviços. Podem me ajudar?";
-    const phoneNumber = "5511999999999";
+    const phoneNumber = "5598983499234";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
