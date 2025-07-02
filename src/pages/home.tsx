@@ -24,6 +24,7 @@ import {
   Star,
   Facebook,
   Instagram,
+  MessageCircle,
 } from "lucide-react";
 
 export default function Home() {
@@ -151,21 +152,21 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="gradient-bg text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <h1 className="font-heading font-bold text-4xl lg:text-6xl leading-tight">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="space-y-6 sm:space-y-8">
+              <h1 className="font-heading font-bold text-3xl sm:text-4xl lg:text-6xl leading-tight">
                 Sua Moto em{" "}
                 <span className="text-yellow-400">Perfeitas Condições</span>
               </h1>
-              <p className="text-xl text-gray-100 leading-relaxed">
+              <p className="text-base sm:text-xl text-gray-100 leading-relaxed">
                 Manutenção preventiva e corretiva especializada em motocicletas,
                 com busca gratuita em toda a cidade. Peças originais e garantia
                 total nos serviços.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
-                  className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 text-lg font-bold hover-scale"
+                  className="bg-white text-red-600 hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold hover-scale w-full sm:w-auto"
                   onClick={() => scrollToSection("contact")}
                 >
                   <Phone className="mr-2" size={20} />
@@ -173,41 +174,47 @@ export default function Home() {
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-2 border-white text-red-600 hover:bg-white hover:text-red-600-600 px-8 py-4 text-lg hover-scale font-bold"
+                  className="border-2 border-white text-red-600 hover:bg-white hover:text-red-600-600 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg hover-scale font-bold w-full sm:w-auto"
                   onClick={() => scrollToSection("services")}
                 >
                   <Settings className="mr-2" size={20} />
                   Ver Serviços
                 </Button>
               </div>
-              <div className="flex items-center space-x-8 pt-4">
+              <div className="flex items-center space-x-4 sm:space-x-8 pt-4">
                 <div className="text-center">
-                  <div className="font-bold text-2xl">500+</div>
-                  <div className="text-sm text-gray-300">Motos Atendidas</div>
+                  <div className="font-bold text-xl sm:text-2xl">500+</div>
+                  <div className="text-xs sm:text-sm text-gray-300">
+                    Motos Atendidas
+                  </div>
                 </div>
                 <div className="text-center">
-                  <div className="font-bold text-2xl">100%</div>
-                  <div className="text-sm text-gray-300">Satisfação</div>
+                  <div className="font-bold text-xl sm:text-2xl">100%</div>
+                  <div className="text-xs sm:text-sm text-gray-300">
+                    Satisfação
+                  </div>
                 </div>
                 <div className="text-center">
-                  <div className="font-bold text-2xl">24h</div>
-                  <div className="text-sm text-gray-300">Atendimento</div>
+                  <div className="font-bold text-xl sm:text-2xl">24h</div>
+                  <div className="text-xs sm:text-sm text-gray-300">
+                    Atendimento
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative mt-8 lg:mt-0">
               <img
                 src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
                 alt="Oficina profissional de motocicletas"
-                className="rounded-2xl shadow-2xl w-full h-auto floating-animation"
+                className="rounded-2xl shadow-2xl w-full h-64 sm:h-80 md:h-96 object-cover floating-animation"
               />
-              <Card className="absolute -bottom-6 -left-6 bg-white text-black shadow-lg">
-                <CardContent className="p-6">
+              <Card className="absolute -bottom-6 -left-2 sm:-left-6 bg-white text-black shadow-lg w-11/12 sm:w-auto">
+                <CardContent className="p-4 sm:p-6">
                   <div className="flex items-center space-x-3">
                     <Wrench className="text-red-600 text-2xl" />
                     <div>
                       <div className="font-bold">Busca Gratuita</div>
-                      <div className="text-sm text-gray-600">
+                      <div className="text-xs sm:text-sm text-gray-600">
                         Em toda a cidade
                       </div>
                     </div>
@@ -220,19 +227,19 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-heading font-bold text-4xl text-black mb-4">
+      <section id="services" className="py-16 sm:py-20 bg-gray-50">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl text-black mb-4">
               Nossos Serviços Especializados
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
               Oferecemos soluções completas para manter sua motocicleta sempre
               em perfeito funcionamento
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-10 sm:mb-16">
             <Card className="service-card bg-white shadow-lg">
               <CardContent className="p-8">
                 <Wrench className="text-red-600 text-4xl mb-6" />
@@ -360,9 +367,9 @@ export default function Home() {
       </section>
 
       {/* Coverage Section */}
-      <section id="coverage" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section id="coverage" className="py-16 sm:py-20 bg-white">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <h2 className="font-heading font-bold text-4xl text-black mb-6">
                 Atendemos Toda a Cidade
@@ -420,17 +427,19 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative mt-8 lg:mt-0">
               <img
                 src="../../assets/logo.jpeg"
                 alt="Cobertura de atendimento na cidade"
-                className="rounded-2xl shadow-2xl w-full h-auto"
+                className="rounded-2xl shadow-2xl w-full h-64 sm:h-80 md:h-96 object-cover"
               />
-              <Card className="absolute top-6 right-6 bg-white shadow-lg">
-                <CardContent className="p-4">
+              <Card className="absolute top-4 sm:top-6 right-4 sm:right-6 bg-white shadow-lg w-10/12 sm:w-auto">
+                <CardContent className="p-2 sm:p-4">
                   <div className="text-center">
-                    <div className="font-bold text-2xl text-red-600">30min</div>
-                    <div className="text-sm text-gray-600">
+                    <div className="font-bold text-xl sm:text-2xl text-red-600">
+                      30min
+                    </div>
+                    <div className="text-xs sm:text-sm text-gray-600">
                       Tempo médio de busca
                     </div>
                   </div>
@@ -442,19 +451,19 @@ export default function Home() {
       </section>
 
       {/* Parts Section */}
-      <section id="parts" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-heading font-bold text-4xl text-black mb-4">
+      <section id="parts" className="py-16 sm:py-20 bg-gray-50">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl text-black mb-4">
               Peças Originais e Compatíveis
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
               Trabalhamos com as melhores marcas do mercado, garantindo
               qualidade e durabilidade para sua motocicleta
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
             <Card className="bg-white shadow-lg hover-scale">
               <CardContent className="p-6 text-center">
                 <Cog className="text-red-600 text-3xl mb-4 mx-auto" />
@@ -497,18 +506,18 @@ export default function Home() {
           </div>
 
           <Card className="bg-white shadow-lg">
-            <CardContent className="p-8">
-              <div className="grid md:grid-cols-3 gap-8 items-center">
+            <CardContent className="p-4 sm:p-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-center">
                 <div className="text-center">
                   <img
                     src="../../assets/estoque02.jpeg"
                     alt="Estoque de peças para motocicletas"
-                    className="rounded-xl shadow-lg w-full h-96 mb-4"
+                    className="rounded-xl shadow-lg w-full h-48 sm:h-96 mb-4 object-cover"
                   />
-                  <h4 className="font-bold text-lg text-black">
+                  <h4 className="font-bold text-base sm:text-lg text-black">
                     Estoque de peças, óleos e filtros
                   </h4>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-sm sm:text-base">
                     Mais de 2.000 itens em estoque
                   </p>
                 </div>
@@ -517,22 +526,24 @@ export default function Home() {
                   <img
                     src="../../assets/motor.jpg"
                     alt="Peças originais de qualidade"
-                    className="rounded-xl shadow-lg w-full h-96 mb-4"
+                    className="rounded-xl shadow-lg w-full h-48 sm:h-96 mb-4 object-cover"
                   />
-                  <h4 className="font-bold text-lg text-black">
+                  <h4 className="font-bold text-base sm:text-lg text-black">
                     Qualidade Garantida
                   </h4>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-sm sm:text-base">
                     Apenas peças originais e certificadas
                   </p>
                 </div>
 
                 <div className="text-center">
-                  <div className="bg-red-600 text-white p-12 rounded-xl mb-4">
-                    <ShoppingCart className="text-4xl mb-4 mx-auto" />
-                    <h4 className="font-bold text-lg">Entrega Rápida</h4>
+                  <div className="bg-red-600 text-white p-8 sm:p-12 rounded-xl mb-4">
+                    <ShoppingCart className="text-3xl sm:text-4xl mb-4 mx-auto" />
+                    <h4 className="font-bold text-base sm:text-lg">
+                      Entrega Rápida
+                    </h4>
                   </div>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-sm sm:text-base">
                     Entrega no mesmo dia para região metropolitana
                   </p>
                 </div>
@@ -543,19 +554,19 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-black text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-heading font-bold text-4xl mb-4">
+      <section className="py-16 sm:py-20 bg-black text-white">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">
               Por que escolher a RN Motos?
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-gray-300 max-w-3xl mx-auto">
               Com anos de experiência e compromisso com a excelência nos colocam
               como referência no mercado
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="text-center">
               <div className="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award size={24} />
@@ -600,9 +611,9 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
+      <section id="contact" className="py-16 sm:py-20 bg-white">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             <div>
               <h2 className="font-heading font-bold text-4xl text-black mb-6">
                 Entre em Contato
@@ -625,7 +636,7 @@ export default function Home() {
 
                 <div className="flex items-center space-x-4">
                   <div className="bg-red-600 text-white p-3 rounded-lg">
-                    <Phone size={20} />
+                    <MessageCircle size={20} />
                   </div>
                   <div>
                     <h4 className="font-bold text-lg text-black">WhatsApp</h4>
@@ -665,7 +676,7 @@ export default function Home() {
                   </h4>
                   <div className="space-y-2 text-gray-600">
                     <div className="flex justify-between">
-                      <span>Segunda à Sexta:</span>
+                      <span>Segunda a Sexta:</span>
                       <span>08:00 - 18:00</span>
                     </div>
                     <div className="flex justify-between">
@@ -693,7 +704,7 @@ export default function Home() {
 
                 <div className="space-y-4 text-center">
                   <Button
-                    className="w-96 bg-white text-red-600 hover:bg-gray-100 py-4 text-lg font-bold hover-scale"
+                    className="w-full sm:w-96 bg-white text-red-600 hover:bg-gray-100 py-3 sm:py-4 text-base sm:text-lg font-bold hover-scale"
                     onClick={() => {
                       const message =
                         "Olá! Gostaria de solicitar um atendimento da RN Motos, peças e serviços. Podem me ajudar?";
@@ -710,11 +721,11 @@ export default function Home() {
 
                   <Button
                     variant="outline"
-                    className="w-96 border-2 border-white text-red-600 hover:bg-white hover:text-red-600 py-4 text-lg font-bold hover-scale"
+                    className="w-full sm:w-96 border-2 border-white text-red-600 hover:bg-white hover:text-red-600 py-3 sm:py-4 text-base sm:text-lg font-bold hover-scale"
                     onClick={() => window.open("tel:+5598981230034", "_self")}
                   >
                     <Phone className="mr-2" size={20} />
-                    Ligar Agora: (98) 98349-9234
+                    Ligar Agora
                   </Button>
                 </div>
               </CardContent>
@@ -724,10 +735,10 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="col-span-2">
+      <footer className="bg-black text-white py-10 sm:py-12">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
                 <Bike className="text-red-600 text-3xl" />
                 <span className="font-heading font-bold text-2xl">
@@ -802,7 +813,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-xs sm:text-base">
             <p>
               &copy; {new Date().getFullYear()} RN Motos, Peças e Serviços.
               Todos os direitos reservados.
